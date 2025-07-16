@@ -6,7 +6,7 @@ using System.Security.Cryptography.X509Certificates;
 using System.Transactions;
 using System.Reflection.Metadata.Ecma335;
 
-public class Program()
+public class Program
 {
     public static Random rng = new Random(); 
 
@@ -15,7 +15,7 @@ public class Program()
     static void Main(string[] args)
     {
         Console.Write(" Hello, welcome to the random activity generator! \n Would you like to generate a random activity? yes/no: ");
-        string input = Console.ReadLine()? .Trim().ToLower();
+        string input = Console.ReadLine()?.Trim().ToLower();
         
         bool cont = input == "yes";
 
